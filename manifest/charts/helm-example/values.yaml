@@ -8,10 +8,12 @@ image:
   pullPolicy: IfNotPresent
   repository: flask-sample
   tag: 1.0.0
+  command: ["python", "main.py"]
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+namespace: "sample"
 
 serviceAccount:
   # Specifies whether a service account should be created
